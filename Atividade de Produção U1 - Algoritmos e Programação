@@ -1,0 +1,98 @@
+#include <stdio.h>
+#include <math.h>
+int main() 
+{
+    //Este código se propõe a realizar uma operação matemática escolhida pelo usuário. Para isso, é perguntado qual operação ele deseja realizar e, 
+    através da estrutura de decição "switch", o programa executa cada operação separadamente e de forma precisa, requisitando um ou mais operadores
+    dependendo do cálculo que será realizado. Após isso, o programa exibe ao usuário o resultado da operação feita com os operandos que o mesmo informou.
+      //Fontes consultadas: https://www.youtube.com/watch?v=w78aBu9cByo 
+      https://www.youtube.com/watch?v=rCFh-tvoXIc
+      //Meu nome de usuário no GitHub: Ricardo-Jacques 
+    
+    int operacao;
+    int contador = 0;
+    double a, b, resultado;
+    printf("-------------Dados do autor-------------\n\n");
+    printf("Nome: Ricardo Jacques\n");
+    printf("Curso: Tecnologia em Análise e Desenvolvimento de Sistemas\n");
+    printf("Universidade: Universidade Lasalle\n");
+    printf("Número de Matrícula: 202213762\n\n");
+    printf("---------------Operações---------------\n\n");
+    printf("Soma[1] - Subtração[2]\n");
+    printf("Multiplicação [3] - Divisão[4]\n");
+    printf("Potenciação[5] - Raiz quadrada[6]\n\n");
+    printf("Escolha a operação que deseja realizar:");
+    scanf("%d", &operacao);
+    switch (operacao)
+    {
+        case 1:
+            while (contador < 1)
+            {
+                printf("Informe o valor de a: ");
+                scanf("%lf", &a);
+                printf("Informe o valor de b: ");
+                scanf("%lf", &b);
+                resultado = a + b;
+                contador++;
+            }
+            break;
+        case 2:
+            while (contador < 1)
+            {
+                printf("Informe o valor de a: ");
+                scanf("%lf", &a);
+                printf("Informe o valor de b: ");
+                scanf("%lf", &b);
+                resultado = a - b;
+                contador++;
+            }
+            break;
+        case 3:
+            while (contador < 1)
+            {
+                printf("Informe o valor de a: ");
+                scanf("%lf", &a);
+                printf("Informe o valor de b: ");
+                scanf("%lf", &b);
+                resultado = a * b;
+                contador++;
+            }
+            break;
+        case 4:
+            while (contador < 1)
+            {
+                printf("Informe o valor de a: ");
+                scanf("%lf", &a);
+                printf("Informe o valor de b: ");
+                scanf("%lf", &b);
+                resultado = a / b;
+                contador++;
+            }
+            break;
+        case 5:
+            while (contador < 1)
+            {
+                printf("Informe o valor de a: ");
+                scanf("%lf", &a);
+                printf("Informe o valor de b: ");
+                scanf("%lf", &b);
+                resultado = pow(a, b);
+                contador++;
+            }
+            break;
+        case 6:
+            while (contador < 1)
+            {
+                printf("Informe o valor de a: ");
+                scanf("%lf", &a);
+                resultado = sqrt(a);
+                contador++;
+            }
+            break;
+        default:
+            printf("Operação inválida!");
+            return 0;
+    }
+    printf("O resultado desta operação é: %lf", resultado);
+    return 0;
+}
