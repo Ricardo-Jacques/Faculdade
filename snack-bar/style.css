@@ -1,0 +1,124 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: radial-gradient(#2b2b2b, #000000);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+/* Lado esquerdo da página */
+section.cinema {
+    display: block;
+    width: auto;
+}
+
+img {
+    margin: 40px 0px 0px 0px;
+}
+
+h1.imgcinema {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    margin: auto;
+    width: 260px;
+}
+
+/* Tamanho da fonte do CineCanoas para telas menores */
+@media (max-width: 880px) {
+    h1.imgcinema {
+        font-size: 30px;
+        width: 170px; 
+    }
+}
+
+@media (max-width: 700px) {
+    h1#titulo {
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+}
+
+/* Lado direito da página */
+section {
+    display: block;
+}
+
+#titulo {
+    margin: 10px 0px 0px 0px;
+    color: #98c8ff;
+    text-align: center;
+    font-size: 30px;
+}
+
+h1 {
+    color: #98c8ff;
+    margin-left: 20px;
+}
+
+div {
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+    align-self: center;
+}
+
+h1.tabela {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+table {
+    margin: auto;
+}
+
+th {
+    color: #ffffff;
+}
+
+td.produto {
+    width: 190px;
+    text-align: left;
+    color: #ffffff;
+}
+
+td.preco {
+    width: 70px;
+    text-align: left;
+    color: #ffffff;
+}
+
+p {
+    color: #ffffff;
+}
+
+p.texto1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 20px 0px 0px 20px;
+    align-self: flex-start;
+}
+
+p.texto2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-self: flex-start;
+    margin: 0px 0px 10px 20px;
+}
+
+p.texto3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-self: flex-start;
+    line-height: 30px;
+    margin: 0px 0px 0px 20px;
+}
